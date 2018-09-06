@@ -1,3 +1,5 @@
+package Function;
+
 import java.util.Random;
 
 public class TopRandomizer {

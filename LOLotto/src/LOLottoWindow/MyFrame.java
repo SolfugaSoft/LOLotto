@@ -1,30 +1,35 @@
 package LOLottoWindow;
+import Controller.StackPaneController;
+import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
+import javafx.scene.control.Button;
+import javafx.scene.layout.StackPane;
+import javafx.stage.Stage;
 
-import java.awt.FlowLayout;
-import java.awt.GridLayout;
 
-import javax.swing.JButton;
-import javax.swing.JFrame;
+public class MyFrame extends Application {
+	public static void main(String[]args){
+		launch(args);
+	}
 
-public class MyFrame extends JFrame {
-	
-	public MyFrame () {
-		super("Hello WOrld");
-		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setSize(700, 500);
-		setLocation(50, 50);
-		setLayout(new FlowLayout());
-		setLayout(new GridLayout(1, 3));
+	@Override
+	public void start(Stage primaryStage) throws Exception {
 		
+		FXMLLoader loader = new FXMLLoader();
+		loader.setLocation(this.getClass().getResource("/LoLottoXML/StackPanelWindow.fxml/"));
+		StackPane randomizerWindow = loader.load();
 		
+		StackPaneController controller = loader.getController();
 		
-		add(new JButton("ButtonTop"));
-		add(new JButton("ButtonMid"));
-		add(new JButton("ButtonBot"));
-		add(new JButton("ButtonJungle"));
+		Scene scene = new Scene (randomizerWindow);
 		
-		setVisible(true);
+		primaryStage.setScene(scene);
+		primaryStage.setTitle("LoLotto is the best Champions Randomizer");
+		primaryStage.show();
 		
 	}
+	
+	
 
 }
