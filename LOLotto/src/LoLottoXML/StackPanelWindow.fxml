@@ -29,22 +29,22 @@
                         <Cursor fx:constant="DEFAULT" />
                      </cursor>
                   </Button>
-                  <Button mnemonicParsing="false" prefHeight="44.0" prefWidth="142.0" text="MID">
+                  <Button fx:id="midButton" mnemonicParsing="false" onAction="#midClick" prefHeight="44.0" prefWidth="142.0" text="MID">
                      <font>
                         <Font size="20.0" />
                      </font>
                   </Button>
-                  <Button mnemonicParsing="false" prefHeight="44.0" prefWidth="140.0" text="JUNGLE">
+                  <Button fx:id="jungleButton" mnemonicParsing="false" onAction="#jungleClick" prefHeight="44.0" prefWidth="140.0" text="JUNGLE">
                      <font>
                         <Font size="20.0" />
                      </font>
                   </Button>
-                  <Button mnemonicParsing="false" prefHeight="44.0" prefWidth="155.0" text="ADC" wrapText="true">
+                  <Button fx:id="adcButton" mnemonicParsing="false" onAction="#adcClick" prefHeight="44.0" prefWidth="155.0" text="ADC" wrapText="true">
                      <font>
                         <Font size="20.0" />
                      </font>
                   </Button>
-                  <Button mnemonicParsing="false" prefHeight="44.0" prefWidth="150.0" text="SUPPORT">
+                  <Button fx:id="supportButton" mnemonicParsing="false" onAction="#supportClick" prefHeight="44.0" prefWidth="150.0" text="SUPPORT">
                      <font>
                         <Font size="20.0" />
                      </font>

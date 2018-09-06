@@ -25,6 +25,7 @@ public class MyFrame extends Application {
 		Scene scene = new Scene (randomizerWindow);
 		
 		primaryStage.setScene(scene);
+		primaryStage.setResizable(false);
 		primaryStage.setTitle("LoLotto is the best Champions Randomizer");
 		primaryStage .show();
 		

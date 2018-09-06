@@ -1,12 +1,8 @@
 package Controller;
 
-import java.io.IOException;
-
-import Function.TopRandomizer;
+import Function.LineRandomizer;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
 import javafx.scene.control.Button;
-import javafx.scene.layout.Pane;
 import javafx.scene.text.Text;
 
 public class StackPaneController {
@@ -28,8 +24,29 @@ public class StackPaneController {
 	private Text championName;
 	private Button topButton;
 	public void topClick() {
-		championName.setText(TopRandomizer.RandomMachine());
+		championName.setText(LineRandomizer.RandomMachine());
 	
+	}
+	
+	@FXML
+	private Button midButton;
+	public void midClick() {
+		championName.setText(LineRandomizer.MidRandomMachine());
+	}
+	@FXML
+	private Button jungleButton;
+	public void jungleClick() {
+		championName.setText(LineRandomizer.JungleRandomMachine());
+	}
+	@FXML
+	private Button adcButton;
+	public void adcClick() {
+		championName.setText(LineRandomizer.AdcRandomMachine());
+	}
+	@FXML
+	private Button supportButton;
+	public void supportClick() {
+		championName.setText(LineRandomizer.SupportRandomMachine());
 	}
 
 }
