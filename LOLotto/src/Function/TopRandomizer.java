@@ -2,23 +2,18 @@ package Function;
 
 import java.util.Random;
 
-public class TopRandomizer {
+public class TopRandomizer {	
 
-	private String[] topChampions;
 
-	public String[] getTopChampions() {
-		return topChampions;
-	}
-
-	public void setTopChampions(String[] topChampions) {
-		this.topChampions = topChampions;
-	}
-
-	public static void RandomMachine() {
+	public static String RandomMachine()
+	
+	{
 		String[] topChampions = { "Aatrox", "Akali", "Camile", "Cho'Gath", "Darius" };
 		Random r = new Random();
 		int i = r.nextInt(topChampions.length);
-		System.out.println(topChampions[i]);
+		String name = topChampions[i];
+		//System.out.println(topChampions[i]);
+		return name;
 
 	}
 }
