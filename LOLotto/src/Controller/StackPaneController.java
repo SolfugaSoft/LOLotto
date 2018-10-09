@@ -1,4 +1,8 @@
 package Controller;
+import java.awt.Desktop;
+import java.io.IOException;
+import java.net.URI;
+import java.net.URISyntaxException;
 
 import Function.LineRandomizer;
 import javafx.fxml.FXML;
@@ -48,5 +52,23 @@ public class StackPaneController {
 	public void supportClick() {
 		championName.setText(LineRandomizer.SupportRandomMachine());
 	}
+	@FXML
+	private Button buildButtion;
+	public void buildClick() {
+		String adresURI = "https://www.mobafire.com/league-of-legends/" + championName.getText()+ "-guide";
+		try {
+			Desktop.getDesktop().browse(new URI(adresURI));
+		} catch (IOException e) {
+			
+			e.printStackTrace();
+		} catch (URISyntaxException e) {
+			
+			e.printStackTrace();
+		}
+		
+
+
+	}
+	
 
 }

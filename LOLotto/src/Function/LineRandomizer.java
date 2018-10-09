@@ -8,7 +8,7 @@ public class LineRandomizer {
 	String[] midChampions = { "Yasuo", "Veigar", "Malzahar", "Vel'Koz", "Zed" };
 	String[] jungleChampions = { "Master Yi", "Shyvana", "Gragas", "Wukong", "Kha'Zix" };
 	String[] adcChampions = { "Varus", "Catlyn", "Jinx", "Jhin", "Draven" };
-	String[] supportChampions = { "Alistar", "Annie", "Bard", "Blizcrank", "Brand" };
+	String[] supportChampions = { "Alistar", "Annie", "Bard", "Blitzcrank", "Brand" };
 
 	public static String RandomMachine()
 

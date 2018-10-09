@@ -53,12 +53,17 @@
             </VBox>
             <AnchorPane prefHeight="222.0" prefWidth="134.0">
                <children>
-                  <Text fx:id="championName" fontSmoothingType="LCD" layoutX="16.0" layoutY="194.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name" textAlignment="CENTER" wrappingWidth="100.80004850029945">
+                  <Text fx:id="championName" fontSmoothingType="LCD" layoutX="14.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name" textAlignment="CENTER" wrappingWidth="100.80004850029945">
                      <font>
                         <Font size="18.0" />
                      </font>
                   </Text>
                   <ImageView fitHeight="132.0" fitWidth="132.0" layoutX="2.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true" />
+                  <Button fx:id="buildButton" layoutY="176.0" mnemonicParsing="false" onAction="#buildClick" prefHeight="44.0" prefWidth="150.0" text="Build" textAlignment="CENTER">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Button>
                </children>
             </AnchorPane>
          </children>
